@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Sticky Navigation Bar</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+		
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500,700|Quicksand:400,500,700" rel="stylesheet"> 
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+                <div class="logo">
+                    <h1>logo</h1>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Fugit doloremque, sequi dicta ea ullam perferendis, totam odio 
+                dolores magnam rem natus accusantium consequuntur sunt eligendi 
+                voluptatibus laudantium non nobis, blanditiis suscipit corrupti 
+                aliquid earum.</p>
+                </p>Nesciunt autem earum tenetur aspernatur dignissimos 
+                deleniti magnam excepturi, similique quam delectus pariatur qui distinctio
+                at ducimus suscipit voluptatibus, unde amet repellat facilis impedit 
+                doloribus, vel repudiandae molestias! Accusantium esse iste labore tempora
+                perspiciatis exercitationem, facere impedit dolor porro ad beatae quibusdam 
+                incidunt molestias dicta placeat eaque veritatis ea soluta deserunt harum 
+                similique doloremque recusandae doloribus? Nulla laborum accusantium 
+                recusandae, vitae odit libero nisi ea consequatur.</p>
+            </p>Nesciunt autem earum tenetur aspernatur dignissimos 
+            deleniti magnam excepturi, similique quam delectus pariatur qui distinctio
+            at ducimus suscipit voluptatibus, unde amet repellat facilis impedit 
+            doloribus, vel repudiandae molestias! Accusantium esse iste labore tempora
+            perspiciatis exercitationem, facere impedit dolor porro ad beatae quibusdam 
+            incidunt molestias dicta placeat eaque veritatis ea soluta deserunt harum 
+            similique doloremque recusandae doloribus? Nulla laborum accusantium 
+            recusandae, vitae odit libero nisi ea consequatur.</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+    //menu toggle-button
+    $(document).ready(function(){
+        $(".menu-icon").on("click", function(){
+            $("nav ul").toggleClass("showing");
+        });
+    });
+
+    $(window).on("scroll", function(){
+        if($(window).scrollTop()){
+            $("nav").addClass("green");
+        }else{
+            $("nav").removeClass("green");
+        }
+        });
+    </script>
+    
+</body>
+</html>
